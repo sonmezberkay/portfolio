@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+.navbar {
+    display: flex;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 95;
+}
+
+
+h2 {
+    font-family: 'Odibee Sans', cursive;
+    font-variant: small-caps;
+    color: wheat;
+}
+
+h1,
+li {
+    color: wheat;
+    list-style-type: none;
+}
+
+.navbar-top {
+    margin: auto 2rem;
+}
+
+.navbar-top img {
+    width: 7rem;
+    border-radius: 30%;
+}
+
+
+.navbar-mid ul {
+    display: flex;
+    padding-left: 12rem;
+}
+
+.navbar-bottom ul {
+    display: flex;
+    align-items: center;
+    margin: auto 2rem;
+}
+
+.navbar-bottom ul li {
+    margin: auto 1rem;
+}
+
+.navbar-mid ul li {
+    margin-right: 2.5rem;
+    cursor: pointer; 
+}
+
+.navbar-mid ul li:active {
+    transform: scale(.9);
+}
+
+.navbar-mid ul li:hover {
+    filter: brightness(.7);
+}
+
+.navbar-mid img {
+    height: 2.5rem;
+}
+
+
+
+.navbar-mid__icon {
+    margin: 1.5rem auto;
+    background-color: wheat;
+    filter: brightness(.9);
+    border-radius: 50%;
+    padding: .3rem;
+}
+
+a {
+    border-radius: 50%;
+    display: flex;
+    padding: .2rem;
+    cursor: pointer;
+    color: wheat;
+    filter: brightness(1);
+}
+
+a:hover {
+    filter: brightness(.8);
+}
+
+.header-brand {
+    background: transparent;
+}
+
+.header-brand:hover {
+    filter: brightness(1);
+}
+
+.navbar-mid__icon .active {
+    background-color: wheat;
+    filter: brightness(.7);
+
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .navbar-top {
+        margin-left: 0;
+    }
+
+    .navbar-mid {
+        margin-left: 0rem;
+    }
+
+    .navbar-bottom {
+        margin-right: 0;
+    }  
+}
+
+@media (max-width: 912px) {
+    .navbar-top {
+        margin-left: 0;
+    }
+
+    .navbar-mid {
+        margin-left: -5rem;
+    }
+
+    .navbar-bottom {
+        margin-right: 9rem;
+        margin-left: -1rem;
+    }    
+}
+
+@media (max-width: 767px) {
+
+    .navbar-mid {
+        display: none;
+    }
+
+    .navbar-bottom {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        color: wheat;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        top: 2.5%;
+        z-index: 101;
+    }
+    .hamburger-menu:hover {
+        filter: brightness(.8); 
+    }
+
+}

@@ -1,0 +1,413 @@
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.left-container {
+    width: 50%;
+    margin-right: 0;
+    text-align: center;
+}
+
+.right-container {
+    width: 50%;
+    height: 70%;
+    margin-top: 12rem;
+}
+
+.title {
+    color: wheat;
+    margin: 1rem auto;
+    font-size: 4rem;
+}
+
+.title-mid {
+    color: wheat;
+    margin: 1rem auto;
+}
+
+.title-bottom {
+    color: wheat;
+    margin: 1rem auto;
+    font-variant: small-caps;
+    filter: brightness(.8);
+    font-size: 1.4rem;
+}
+
+.btn {
+    margin: 1rem auto;
+    background-color: wheat;
+    padding: .5rem 1rem;
+    color: #092E20;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid wheat;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #092E20;
+    color: wheat;
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+
+
+
+
+.cubespinner {
+    animation-name: spinner;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 18s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+    margin-top: 5.5rem;
+    margin-left: 18rem;
+}
+
+.cubespinner div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgba(29, 36, 28, 0.4);
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px rgb(124, 129, 124);
+}
+
+.cubespinner .icon-1 {
+    transform: translateZ(12rem);
+    padding: 3rem;
+}
+.cubespinner .icon-2 {
+    transform: rotateY(90deg) translateZ(12rem);
+    padding: 3rem;
+}
+.cubespinner .icon-3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(12rem);
+    padding: 3rem;
+}
+.cubespinner .icon-4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(12rem);
+    padding: 3rem;
+}
+.cubespinner .icon-5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(12rem);
+    padding: 3rem;
+}
+.cubespinner .icon-6 {
+    transform: rotateX(-90deg) translateZ(12rem);
+    padding: 3rem;
+}
+
+
+.links {
+    display: none;
+}
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.links ul li {
+    margin: auto .4rem;
+}
+
+
+@keyframes spinner {
+    from,
+    to {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+        transform: rotateY(-90deg);
+    }
+    33% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+    83% {
+        transform: rotateX(90deg) rotateZ(90deg);
+    }
+}
+
+
+
+@media (max-width: 1370px) {
+    .cubespinner {
+        margin-left: 12rem;
+    }
+
+    .left-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-container {
+        width: 100%;
+        margin-top: 10rem;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .right-container {
+        margin-top: 5rem;
+        margin-left: -14rem;
+    }
+
+    .title {
+        margin-bottom: .2rem;
+    }
+
+    .title-mid {
+        margin-bottom: .2rem;
+    }
+
+    .cubespinner div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        background: rgba(29, 36, 28, 0.4);
+        text-align: center;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px rgb(124, 129, 124);
+    }
+    
+    .cubespinner .icon-1 {
+        transform: translateZ(9rem);
+        padding: 1rem;
+    }
+    .cubespinner .icon-2 {
+        transform: rotateY(90deg) translateZ(9rem);
+        padding: 1rem;
+    }
+    .cubespinner .icon-3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(9rem);
+        padding: 1rem;
+    }
+    .cubespinner .icon-4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(9rem);
+        padding: 1rem;
+    }
+    .cubespinner .icon-5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(9rem);
+        padding: 1rem;
+    }
+    .cubespinner .icon-6 {
+        transform: rotateX(-90deg) translateZ(9rem);
+        padding: 1rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-container {
+        width: 100%;
+        margin-top: 6rem;
+        white-space: normal;
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    .right-container {
+        margin-top: 4rem;
+        margin-left: -17rem;
+    }
+
+    .cubespinner div {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border: 1px solid #ccc;
+        background: rgba(29, 36, 28, 0.4);
+        text-align: center;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px rgb(124, 129, 124);
+    }
+    
+    .cubespinner .icon-1 {
+        transform: translateZ(8rem);
+        padding: 3rem;
+    }
+    .cubespinner .icon-2 {
+        transform: rotateY(90deg) translateZ(8rem);
+        padding: 3rem;
+    }
+    .cubespinner .icon-3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(8rem);
+        padding: 3rem;
+    }
+    .cubespinner .icon-4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(8rem);
+        padding: 3rem;
+    }
+    .cubespinner .icon-5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(8rem);
+        padding: 3rem;
+    }
+    .cubespinner .icon-6 {
+        transform: rotateX(-90deg) translateZ(8rem);
+        padding: 3rem;
+    }
+    
+    .links {
+        display: block;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .left-container {
+        width: 100%;
+        margin-top: 7rem;
+        white-space: normal;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .right-container {
+        margin-top: 0;
+        margin-left: -22rem;
+    }
+
+    .cubespinner {
+        margin-left: 12rem;
+    }
+
+    .cubespinner div {
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #ccc;
+        background: rgba(29, 36, 28, 0.4);
+        text-align: center;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px rgb(124, 129, 124);
+    }
+
+    .cubespinner .icon-1 {
+        transform: translateZ(6rem);
+        padding: 4rem;
+    }
+    .cubespinner .icon-2 {
+        transform: rotateY(90deg) translateZ(6rem);
+        padding: 4rem;
+    }
+    .cubespinner .icon-3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(6rem);
+        padding: 4rem;
+    }
+    .cubespinner .icon-4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(6rem);
+        padding: 4rem;
+    }
+    .cubespinner .icon-5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(6rem);
+        padding: 4rem;
+    }
+    .cubespinner .icon-6 {
+        transform: rotateX(-90deg) translateZ(6rem);
+        padding: 4rem;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .left-container {
+        font-size: 1rem;
+        margin-top: 5rem;
+        
+    }
+    
+
+    .right-container {
+        margin-top: -1rem;
+        margin-left: -23rem;
+    }
+
+    .cubespinner div {
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #ccc;
+        background: rgba(29, 36, 28, 0.4);
+        text-align: center;
+        font-size: .6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px rgb(124, 129, 124);
+    }
+
+    .cubespinner .icon-1 {
+        transform: translateZ(4rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-2 {
+        transform: rotateY(90deg) translateZ(4rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(4rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(4rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(4rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-6 {
+        transform: rotateX(-90deg) translateZ(4rem);
+        padding: 2rem;
+    }
+}

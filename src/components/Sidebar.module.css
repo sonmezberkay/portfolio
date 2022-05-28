@@ -1,0 +1,52 @@
+.sidebar-links {
+    position: fixed;
+    background-color: #111;
+    filter: brightness(.7);
+    opacity: .9;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 3rem auto;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #ccc;
+}
+
+
+@media (max-height: 450px) and (orientation: landscape) {
+    
+    .btn {
+        margin: 2rem auto;
+    }
+}
+
+
+@media (max-height: 350px) and (orientation: landscape) {
+    
+    .btn {
+        margin: 1rem auto;
+    }
+}
+
+
+@media (max-width: 350px) and (orientation: portrait) {
+    
+    .btn {
+        margin: 2rem auto;
+    }
+}
