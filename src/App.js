@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
         <Navbar />
         <Switch>
           <Route path="/" exact>
