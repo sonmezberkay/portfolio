@@ -152,6 +152,50 @@
 
 
 
+@media (max-width: 1500px) {
+
+    .cubespinner div {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        border: 1px solid #ccc;
+        background: rgba(29, 36, 28, 0.4);
+        text-align: center;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px rgb(124, 129, 124);
+    }
+    
+    .cubespinner .icon-1 {
+        transform: translateZ(8rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-2 {
+        transform: rotateY(90deg) translateZ(8rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(8rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(8rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(8rem);
+        padding: 2rem;
+    }
+    .cubespinner .icon-6 {
+        transform: rotateX(-90deg) translateZ(8rem);
+        padding: 2rem;
+    }
+
+}
+
+
 @media (max-width: 1370px) {
     .cubespinner {
         margin-left: 12rem;
@@ -472,7 +516,7 @@
     }
 
     .cubespinner {
-        margin-left: 12rem;
+        margin-left: 14rem;
     }
 
     .cubespinner div {
@@ -578,6 +622,17 @@
         display: block;
         margin-top: 9rem;
     }
+}
+
+
+@media (max-width: 450px) {
+    
+    .right-container {
+        margin-top: -1rem;
+        margin-left: -25rem;
+    }
+
+   
 }
 
 
