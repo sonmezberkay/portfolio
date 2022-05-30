@@ -153,7 +153,7 @@ a:hover {
         display: block;
         color: wheat;
         cursor: pointer;
-        position: absolute;
+        position: fixed;
         right: 5%;
         top: 2.5%;
         z-index: 101;
