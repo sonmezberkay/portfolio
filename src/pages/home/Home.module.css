@@ -4,6 +4,7 @@
     width: 100%;
     align-items: center;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .left-container {
@@ -80,7 +81,7 @@
     border: 1px solid #ccc;
     background: rgba(29, 36, 28, 0.4);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,27 +89,27 @@
 }
 
 .cubespinner .icon-1 {
-    transform: translateZ(12rem);
+    transform: translateZ(10rem);
     padding: 3rem;
 }
 .cubespinner .icon-2 {
-    transform: rotateY(90deg) translateZ(12rem);
+    transform: rotateY(90deg) translateZ(10rem);
     padding: 3rem;
 }
 .cubespinner .icon-3 {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(12rem);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(10rem);
     padding: 3rem;
 }
 .cubespinner .icon-4 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(12rem);
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(10rem);
     padding: 3rem;
 }
 .cubespinner .icon-5 {
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(12rem);
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(10rem);
     padding: 3rem;
 }
 .cubespinner .icon-6 {
-    transform: rotateX(-90deg) translateZ(12rem);
+    transform: rotateX(-90deg) translateZ(10rem);
     padding: 3rem;
 }
 
@@ -146,13 +147,18 @@
         transform: rotateY(-270deg) rotateZ(90deg);
     }
     83% {
-        transform: rotateX(90deg) rotateZ(90deg);
+        transform: rotateX(90deg);
     }
 }
 
 
 
+
 @media (max-width: 1500px) {
+
+    .container {
+        overflow: hidden;
+    }
 
     .cubespinner div {
         position: absolute;
@@ -210,6 +216,7 @@
 @media (max-width: 1250px) {
     .container {
         flex-direction: column;
+        overflow: auto;
     }
 
     .left-container {
@@ -221,7 +228,7 @@
 
     .right-container {
         margin-top: 5rem;
-        margin-left: -14rem;
+        margin-left: 0;
     }
 
     .title {
@@ -274,7 +281,12 @@
 }
 
 
+
 @media (max-width: 1250px) and (max-height: 851px) {
+    .container {
+        overflow: auto;
+        overflow-x: auto;
+    }
 
     .right-container {
         margin-top: 3rem;
@@ -282,16 +294,22 @@
     }
 
 }
-@media (max-width: 1250px) and (max-height: 851px) {
+
+@media (max-width: 1052px) {
+
 
     .right-container {
         margin-top: 3rem;
-        margin-left: 0rem;
+        margin-left: -3rem;
     }
 
 }
 
 @media (max-width: 970px) and (max-height: 851px) {
+
+    .container {
+        overflow-x: auto;
+    }
 
     .right-container {
         margin-top: 3rem;
@@ -300,9 +318,30 @@
 
 }
 
+@media (max-width: 945px) {
+
+
+    .right-container {
+        margin-top: 3rem;
+        margin-left: -8rem;
+    }
+
+}
+
+@media (max-width: 840px) {
+
+
+    .right-container {
+        margin-top: 3rem;
+        margin-left: -10rem;
+    }
+
+}
+
 @media (max-width: 767px) {
     .container {
         flex-direction: column;
+        overflow: auto;
     }
 
     .left-container {
@@ -366,6 +405,7 @@
 @media (max-width: 767px) and (max-height: 430px) {
     .container {
         flex-direction: column;
+        overflow: auto;
     }
 
     .left-container {
@@ -430,6 +470,7 @@
 @media (max-width: 767px) and (max-height: 820px) {
     .container {
         flex-direction: column;
+        overflow: auto;
     }
 
     .left-container {
@@ -496,6 +537,7 @@
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
+        overflow: auto;
     }
 
     .title {
@@ -562,8 +604,11 @@
 
 
 @media (max-width: 600px) and (max-height: 330px) {
+
+
     .container {
         flex-direction: column;
+        overflow: auto;
     }
 
     .left-container {
@@ -626,6 +671,10 @@
 
 
 @media (max-width: 450px) {
+
+    .container {
+        overflow: auto;
+    }
     
     .right-container {
         margin-top: -1rem;
@@ -637,17 +686,23 @@
 
 
 @media (max-width: 400px) {
+
+    .container {
+        overflow: auto;
+    }
+
     .left-container {
         font-size: 1rem;
-        margin-top: 5rem;
+        margin-top: 7rem;
         
     }
     
 
     .right-container {
-        margin-top: -1rem;
-        margin-left: -23rem;
+        margin-top: 2rem;
+        margin-left: -27rem;
     }
+
 
     .cubespinner div {
         position: absolute;
