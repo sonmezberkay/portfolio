@@ -441,6 +441,10 @@ form .email input {
         width: 45%;
     }
 
+    .copy-button {
+        top: 20%;
+    }
+
 }
 
 
@@ -498,16 +502,6 @@ form .email input {
     }
 }
 
-@media (max-width: 500px) {
-
-    .copy-notification-email {
-        width: 52%;
-    }
-
-    .copy-notification-phone {
-        width: 59%;
-    }
-}
 
 @media (max-width: 535px) {
 
@@ -543,6 +537,44 @@ form .email input {
         font-size: 1rem;
     }
 
+
+}
+
+@media (max-width: 500px) {
+
+    .copy-notification-email {
+        width: 52%;
+    }
+
+    .copy-notification-phone {
+        width: 59%;
+    }
+}
+
+
+
+@media (max-width: 463px) {
+    
+    .copy-button {
+        font-size: 1rem;
+    }
+
+    .contact-details h3 {
+        font-size: 1rem;
+    }
+
+    .contact-details h4 {
+        font-size: .9rem;
+    }
+
+    .contact-icon__mail,
+    .contact-icon__phone,
+    .contact-location {
+        margin-left: 0;
+        margin-right: .7rem;
+        font-size: 1rem;
+    }
+    
 
 }
 
@@ -607,7 +639,7 @@ form .email input {
     }
 
     .copy-button {
-        font-size: .8rem;
+        font-size: .9rem;
     }
 
     .copy-notification-email {
