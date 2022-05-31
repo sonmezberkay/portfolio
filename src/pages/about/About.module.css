@@ -209,6 +209,8 @@
 
 
 
+
+
 @media (max-width: 1900px) {
     .skills-list-1 {
         margin-left: -2rem;
@@ -226,25 +228,111 @@
     }
 }
 
-@media (max-width: 1600px) {
+@media (max-height: 850px) {
+    .about-container {
+        font-size: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .skills {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .languages {
+        width: 55%;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+
+@media (max-height: 660px) {
+    .about-container {
+        font-size: .7rem;
+    }
+
+    .about-me {
+        margin-top: 0;
+    }
+
+    .skills {
+        font-size: 1.2rem;
+        padding-bottom: 3rem;
+    }
+
+    .languages {
+        width: 55%;
+        font-size: 1.1rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-height: 585px) {
+
+    .about-container p {
+        font-size: .95rem;
+    }
+
+    .about-container h1 {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-height: 555px) {
+
+    .languages h2 {
+        font-size: 1.4rem;
+    }
+
+    .languages ul {
+        font-size: .9rem;
+    }
+
+}
+
+@media (max-height: 500px) and (max-width: 1295px) {
+
+    .container {
+        margin-top: 2rem;
+    }
+
+    .about-me {
+        padding-top: 1rem;
+    }
+
+    .languages h2 {
+        font-size: 1.3rem;
+    }
+
+    .languages ul {
+        font-size: .8rem;
+    }
+
+}
+
+
+@media (max-width: 1550px) {
+
+    .about-container {
+        padding-bottom: 5rem;
+    }
+
     .skills {
         width: 80%;
+        padding-bottom: 2rem;
     }
 
     .languages {
         width: 65%;
+        padding-bottom: 2rem;
     }
 }
 
-@media (max-width: 1300px) {
-    .svg {
-        bottom: 8%;
-        right: 2%;
-    }
 
-}
+@media (max-width: 1280px) {
 
-@media (max-width: 1183px) {
     .container {
         flex-direction: column;
         padding-bottom: 2rem;
@@ -254,8 +342,9 @@
     }
 
     .about-container {
-        height: 84%;
-        margin-top: 8rem
+        height: 74%;
+        margin-top: 8rem;
+        padding-bottom: 0;
     }
 
     .right-container {
@@ -297,6 +386,39 @@
     }
 }
 
+@media (max-width: 1280px) and (max-height: 400px) {
+
+
+    .languages {
+        height: 50%;
+        width: 50%;
+        margin-top: 5rem;
+        margin-left: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .languages h2 {
+        font-size: 1.8rem;
+    }
+
+    .languages ul {
+        padding-left: 4.5rem;
+        padding-top: .5rem;
+        font-size: 1.2rem;
+    }
+
+    .svg {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .svg-shadow {
+        position: static;
+        margin-top: 1.2rem;
+        transform: translateX(1rem);
+    }
+}
+
 
 @media (max-width: 1000px) {
     .skills {
@@ -320,7 +442,7 @@
     }
 
     .about-container {
-        height: 84%;
+        height: 74%;
     }
 
 }
@@ -382,6 +504,21 @@
 
 }
 
+@media (max-width: 750px) and (max-height: 556px) {
+
+    .about-me {
+        padding-bottom: 0;
+    }
+    
+    .about-me p {
+        font-size: .9rem;
+    }
+
+    .languages ul {
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 640px) {
     .skills {
         width: 100%;
@@ -389,6 +526,32 @@
 
     .languages {
         width: 100%;
+    }
+}
+
+@media (max-width: 511px) and (max-height: 530px) {
+    
+    .about-me p {
+        font-size: .9rem;
+    }
+
+    .languages ul {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 511px) and (max-height: 450px) {
+    
+    .about-container {
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .about-me p {
+        font-size: .9rem;
+    }
+
+    .btn {
+        font-size: .8rem;
     }
 }
 
