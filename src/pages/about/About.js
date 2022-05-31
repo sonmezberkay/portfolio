@@ -41,8 +41,8 @@ const About = () => {
                         <ul className={classes['skills-list-2']}>
                             <li>SASS</li>
                             <li>Redux</li>
+                            <li>Git</li>
                             <li>Teamwork</li>
-                            <li>Communication</li>
                         </ul>
                     </div>
 
